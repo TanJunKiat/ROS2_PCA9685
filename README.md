@@ -4,17 +4,20 @@ CONTENTS OF THIS FILE
 ---------------------
 1. README.md
 2. src
-3. 
 
 Introduction
 ---------------------
-### TBC
 
-- Tested with Raspberry Pi 4B (4 GB) with Sandisk Extreme Pro (64 GB)
+- Tested with:
+1. Raspberry Pi 4B (4 GB) with Sandisk Extreme Pro (64 GB)
+2. ROS2 Foxy
+3. PCA9685
+
 
 Requirements
 ---------------------
-### TBC
+1. ROS2
+2. PCA9685
 
 Installation
 ---------------------
@@ -28,13 +31,27 @@ sudo pip3 install adafruit-pca9685
 sudo pip3 install adafruit-circuitpython-servokit
 ```
 
+2. Build workspace
+```
+cd <ws>
+colcon build
+```
+
 Usage
 ---------------------
-### TBC
+```
+cd <ws>
+source ./install/setup.bash
+ros2 run ros2_pca9685 listener
+```
 
 Additional Information
 ---------------------
-### TBC
+1. This code was created to produce PWM for a rotor that generates a maximum thrust of 15.0N
+
+2. The mapping can be reconfigured by editing the <subscriber_member_function.py> file
+
+
 
 FAQ / Troubleshooting
 ---------------------
