@@ -3,6 +3,8 @@
 CONTENTS OF THIS FILE
 ---------------------
 1. README.md
+2. src
+3. 
 
 Introduction
 ---------------------
@@ -18,17 +20,15 @@ Installation
 ---------------------
 
 ### Pre-requisite
-1. Install Curl:
+1. Install adafruit pca9685 and servokit library
 ```
-sudo snap install curl
+sudo pip3 install adafruit-pca9685
+```
+```
+sudo pip3 install adafruit-circuitpython-servokit
 ```
 
-
-### Installation of PX4-ROS-COM
-### TBC
-
-
-Verify the installation
+Usage
 ---------------------
 ### TBC
 
